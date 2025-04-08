@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_70">#EEEEEE</color>
+    <color name="gray_410">#979797</color>
+    <color name="crimson_red" type="material">#f22952</color>
+    <color name="yellow_ocher" type="material material-accent">#DF9527</color>
+
+    <color name="onPrimary">#B80808</color>
+    <color name="amber">#FFBF00</color>
+    <color name="primaryColor">#B80808</color>
+    <color name="pest">#06F8F4</color>
+    <color name="green">#14C38E</color>
+    <color name="bgColor">#F7F8FC</color>
+    <color name="bgColorWhite">#ECECEC</color>
+    <color name="wrong_ans">#F65B51</color>
+    <color name="white_paste">#FFECE7</color>
+    <color name="uploadColor">#444444</color>
+
+    <color name="start">#F8F9C7</color>
+    <color name="end">#F2C1EA</color>
+    <color name="end2">#F0068139</color>
+    <color name="yellow">#F8E644</color>
+    <color name="green_low">#98D4B1</color>
+    <color name="text_field_error_color">#E57373FF</color>
+    <color name="text_grey_color">#616161</color>
+    <color name="app_text_red_color">#B80808</color>
+    <color name="app_text_red_opacity_color">#FA0A0A</color>
+    <color name="app_text_black_color">#212121</color>
+    <color name="app_text_green_opacity_color">#3DC963</color>
+    <color name="app_text_gray_color">#5E5E5E</color>
+    <color name="app_text_yello_color">#FBBC05</color>
+
+
+
+    <color name="gradient_start">#2575fc</color>
+    <color name="gradient_end">#154AD3</color>
+</resources>

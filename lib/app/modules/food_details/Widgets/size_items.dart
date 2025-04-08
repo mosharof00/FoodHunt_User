@@ -1,0 +1,86 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:food_hunt_user/Utils/sizedbox_extension.dart';
+import 'package:food_hunt_user/app/modules/food_details/controllers/food_details_controller.dart';
+
+import '../../../../Helper/helper_utils.dart';
+import '../../../../Utils/app_text_style.dart';
+import '../../../../gen/colors.gen.dart';
+
+class SizeItems extends StatelessWidget {
+  const SizeItems({super.key, required this.controller});
+  final FoodDetailsController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+        padding: EdgeInsets.zero,
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: controller.sizeList.length,
+        shrinkWrap: true,
+        itemBuilder: (context, index) {
+          final size = controller.sizeList[index];
+          return InkWell(
+            borderRadius: BorderRadius.circular(50.r),
+            onTap: () {
+              controller.selectedSizeIndex.value = index;
+              controller.selectedSize.value = controller.sizeList[controller.selectedSizeIndex.value];
+              controller.getTotal();
+            },
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 8.h),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  AppTextStyle(
+                    text: size.keys.join(''),
+                    fontWeight: FontWeight.w600,
+                  ),
+                  Spacer(),
+                  AppTextStyle(
+                    text: "${HelperUtils.currencySymbol} ${size.values}",
+                    color: Colors.grey,
+                  ),
+                  5.width,
+                  Obx(() {
+                    return Container(
+                      height: 23.h,
+                      width: 23.w,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                            width: 1.5.r,
+                            color: controller.selectedSizeIndex.value == index
+                                ? ColorName.primaryColor
+                                : Colors.grey.shade400),
+                      ),
+                      child: controller.selectedSizeIndex.value == index
+                          ? Center(
+                              child: Container(
+                                height: 13.h,
+                                width: 13.w,
+                                decoration: BoxDecoration(
+                                  color: ColorName.primaryColor,
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: ColorName.primaryColor
+                                            .withAlpha(150),
+                                        blurRadius: 2.r,
+                                        offset: Offset(1, 3))
+                                  ],
+                                ),
+                              ),
+                            )
+                          : SizedBox.shrink(),
+                    );
+                  })
+                ],
+              ),
+            ),
+          );
+        });
+  }
+}
