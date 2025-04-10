@@ -78,7 +78,7 @@ class EditProfileView extends GetView<EditProfileController> {
                               ),
                               Expanded(
                                 child: Text(
-                                  "Restaurant Info",
+                                  "Profile",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 25,
