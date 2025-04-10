@@ -6,9 +6,11 @@ class AppConfig {
   static String appName = 'WeeklyEatUser';
   static String appFirebase = 'Shopaholic_Seller';
 
-  static String SUPABASE_URL="https://axbajldpgtugenukkold.supabase.co";
+  // static String SUPABASE_URL="https://axbajldpgtugenukkold.supabase.co";
+  static String SUPABASE_URL="https://mfmzkdtgkrwwumivkgic.supabase.co";
 
-  static String SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4YmFqbGRwZ3R1Z2VudWtrb2xkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4NzcwNDksImV4cCI6MjA1MzQ1MzA0OX0.WjqysBZmEFliNkAMC7okAS9KsssOursItSbC9uscM1c";
+  // static String SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4YmFqbGRwZ3R1Z2VudWtrb2xkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4NzcwNDksImV4cCI6MjA1MzQ1MzA0OX0.WjqysBZmEFliNkAMC7okAS9KsssOursItSbC9uscM1c";
+  static String SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1mbXprZHRna3J3d3VtaXZrZ2ljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQxMDkxMDYsImV4cCI6MjA1OTY4NTEwNn0.atapIG_srkN8j0YEmeEhYI_RQmP7QKc0PYFFl29weoM";
   static String SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4YmFqbGRwZ3R1Z2VudWtrb2xkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNzg3NzA0OSwiZXhwIjoyMDUzNDUzMDQ5fQ.i4xdTy6IVKD_6nuP052t1CejVeVdOXOSvZszWfv330g";
   static String GOOGLE_API_KEY="AIzaSyDqY4iwIwpyzo59ZwxPpWGLUG0qvbbX6Ws";
   static String IMAGE_URL="${SUPABASE_URL}/storage/v1/object/public/";
